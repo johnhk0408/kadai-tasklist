@@ -12,29 +12,20 @@
     <tr>
         <th>タイトル</th>
         <td>
-<%= @task.status %>
+<%= @task.content %>
         </td>    
     
     </tr>
     <tr>
         <th>タスク</th>
         <td>
-<%= @task.content %>
+<%= @task.status %>
         </td>
-    </tr>
+    </tr> 
     
     
 </table>
 
-<h1>id:
-<%= @task.id %>
-のステイタス詳細ページ</h1>
-
-<p>
-<%= @task.content %>
-
-<%= @task.status %>
-</p>
 
 <%= link_to 'このタスクを編集する', edit_task_path(@task), class: 'btn btn-default' %>
 
